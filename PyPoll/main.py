@@ -12,7 +12,7 @@ with open(election_data) as csv_file:
 
     count_votes = 0
 
-#count total votes
+    #count total votes
     for row in csv_reader:
         count_votes += 1
 
