@@ -65,7 +65,7 @@ with open(election_data) as csv_file:
     print(line3)
     print(line4)
     for index in range(len(candidates_list)):
-        print(f"{candidates_list[index]}: {round(percentage_of_votes_per_candidate[index], 4)}% ({votes_per_candidate[index]})")
+        print(f"{candidates_list[index]}: {round(percentage_of_votes_per_candidate[index], 3)}% ({votes_per_candidate[index]})")
     print(line5) 
     print(line6)
     print(line7)
@@ -75,5 +75,5 @@ with open(election_data) as csv_file:
 
     result.write('{}\n{}\n{}\n{}'.format(line1,line2,line3,line4))
     for index in range(len(candidates_list)):
-        result.write('\n{}'.format(f"{candidates_list[index]}: {round(percentage_of_votes_per_candidate[index], 5)}% ({votes_per_candidate[index]})"))
+        result.write('\n{}'.format(f"{candidates_list[index]}: {round(percentage_of_votes_per_candidate[index], 3)}% ({votes_per_candidate[index]})"))
     result.write('\n{}\n{}\n{}'.format(line5,line6, line7))
